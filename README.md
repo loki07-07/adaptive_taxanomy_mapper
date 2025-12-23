@@ -1,22 +1,5 @@
 # Adaptive Taxonomy Mapper
 
-A Streamlit application that uses RAG (Retrieval-Augmented Generation) to map stories to an internal taxonomy system.
-
-## Features
-
-- **Story Analysis**: Analyzes story content and user-provided tags to determine appropriate genre and subgenre
-- **RAG Integration**: Uses FAISS vector store and HuggingFace embeddings for semantic search
-- **LLM Inference**: Leverages Groq's LLaMA model for intelligent categorization
-- **Rule-based Fallback**: Provides fallback logic when LLM is unavailable
-- **Interactive UI**: Clean Streamlit interface for easy story input and taxonomy mapping
-
-## Supported Taxonomy
-
-- **Romance**: Slow-burn, Enemies-to-Lovers, Second Chance
-- **Thriller**: Espionage, Psychological, Legal Thriller  
-- **Sci-Fi**: Hard Sci-Fi, Space Opera, Cyberpunk
-- **Horror**: Psychological Horror, Gothic, Slasher
-
 ## Installation
 
 1. Clone the repository:
@@ -58,16 +41,6 @@ Then open your browser and navigate to the displayed URL (typically `http://loca
 3. **LLM Processing**: Groq's LLaMA model analyzes the context and makes predictions
 4. **Validation**: Results are validated against the predefined taxonomy
 5. **Fallback**: If LLM fails, rule-based logic provides categorization
-
-## Project Structure
-
-```
-├── app.py              # Streamlit web interface
-├── mapping.py          # Core taxonomy mapping logic
-├── requirements.txt    # Python dependencies
-├── .gitignore         # Git ignore rules
-└── README.md          # Project documentation
-```
 
 ## Dependencies
 
